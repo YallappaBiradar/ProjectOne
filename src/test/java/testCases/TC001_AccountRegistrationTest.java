@@ -11,25 +11,11 @@ import org.testng.annotations.Test;
 
 import pageObjects.AccountRegestrationPage;
 import pageObjects.HomePage;
+import testBase.BaseClass;
 
-public class TC001_AccountRegistrationTest {
+public class TC001_AccountRegistrationTest extends BaseClass {
 
-	WebDriver driver;
-	@BeforeClass
-	public void setup() {
-
-		driver = new ChromeDriver();
-		driver.manage().deleteAllCookies();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		driver.get("https://demo.opencart.com/");
-		driver.manage().window().maximize();
-
-	}
-	
-	@AfterClass
-	public void tearDown() {
-		driver.quit();
-	}
+	public WebDriver driver;
 	
 	@Test
 	public void verify_Account_Registration() {
