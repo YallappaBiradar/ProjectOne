@@ -51,11 +51,11 @@ public class TC_04_AddingProductToCart extends BaseClass {
 		this.id = cpage.getOrderId();
 		System.out.println("order id is :" + this.id);
 
-		cpage.clickCheckoutBtn();
-
+//		cpage.clickCheckoutBtn();
+		Thread.sleep(3000);
 		String productName = cpage.pName();
 		System.out.println("Product Name  is :"+productName);
-		cpage.logout();
+		
 
 		if (productName.equalsIgnoreCase(prodName)) {
 
@@ -64,7 +64,10 @@ public class TC_04_AddingProductToCart extends BaseClass {
 
 			Assert.assertTrue(false);
 		}
-
+		
+		cpage.clickCheckoutBtn();
+//		cpage.clickCheckoutBtn();
+		cpage.logout();
 	}
 
 }
