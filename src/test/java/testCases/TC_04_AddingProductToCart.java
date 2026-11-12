@@ -12,7 +12,7 @@ public class TC_04_AddingProductToCart extends BaseClass {
 
 	String id;
 	String prodName = "ZARA COAT 3";
-	String SelectSountry = " India";
+	String SelectSountry = "India";
 
 	@Test
 	public void appLogin() {
@@ -75,15 +75,17 @@ public class TC_04_AddingProductToCart extends BaseClass {
 		
 		CartPage cpage2 = new CartPage(driver);
 		
-		String cartEmail = cpage2.placeingSelectedOrder("ind", SelectSountry);
-		
-		if(cartEmail.equals(p.getProperty("uName"))) {
+		String txtThanks = cpage2.placeingSelectedOrder("ind", SelectSountry);
+		System.out.println("Text in order page is :"+txtThanks);
+		if(txtThanks.equalsIgnoreCase("THANKYOU FOR THE ORDER.")) {
 			
 			Assert.assertTrue(true);
 		}
 		else {
 			Assert.fail();
 		}
+		
+		
 	}
 
 }

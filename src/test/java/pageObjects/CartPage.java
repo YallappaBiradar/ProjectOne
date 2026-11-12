@@ -3,6 +3,8 @@ package pageObjects;
 import java.time.Duration;
 import java.util.List;
 
+import org.jspecify.annotations.NonNull;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -35,7 +37,7 @@ public class CartPage extends BasePage {
 	@FindBy(xpath = "//input[@placeholder='Select Country']")
 	WebElement txtcountry;
 
-	@FindBy(xpath = "//button[@class='ta-item list-group-item ng-star-inserted']")
+	@FindBy(css = ".ta-results button")
 	List<WebElement> countryOption;
 
 	@FindBy(xpath = "//*[contains(text(),'Place Order ')]")
@@ -43,6 +45,9 @@ public class CartPage extends BasePage {
 
 	@FindBy(xpath = "//button[@routerlink='/dashboard/myorders']")
 	WebElement btnOrders;
+	
+	@FindBy(xpath="//h1[@class='hero-primary']")
+	WebElement txtThankYou;
 
 	public String getOrderId() {
 
@@ -77,23 +82,45 @@ public class CartPage extends BasePage {
 
 		txtcountry.sendKeys(countryName);
 		wait.until(ExpectedConditions.visibilityOfAllElements(countryOption));
-		
-		for (WebElement opt : countryOption) {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+	/*	for (WebElement opt : countryOption) {
 
 			if (opt.getText().equalsIgnoreCase(country)) {
 
-				opt.click();
+//				opt.click();
+				js.executeScript("arguments[0].click()", opt); 
 				break;
 			}
 
 		}
+	*/
 		
+		for(int i = 0 ; i<countryOption.size(); i++) {
+			
+		String	countryText = countryOption.get(i).getText();
+		System.out.println("Countries are :"+countryText);
+		if(countryText.equalsIgnoreCase(country)) {
+			
+			countryOption.get(i).click();
+			break;
+		}
+			
+		}
 //		Thread.sleep(3000);
 		wait.until(ExpectedConditions.elementToBeClickable(btnPlaceOrder));
 		btnPlaceOrder.click();
-		btnOrders.click();
-
-		return cartPageEmail;
+		
+		String thankyouText = txtThankYou.getText();
+		
+		@NonNull
+		WebElement orderbtn = wait.until(ExpectedConditions.elementToBeClickable(btnOrders));
+//		btnOrders.click();
+		
+		orderbtn.click();
+		
+		Thread.sleep(3000);
+		
+		return thankyouText;
 
 	}
 
