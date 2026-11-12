@@ -1,83 +1,102 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
+<testng-results ignored="0" total="4" passed="0" failed="0" skipped="4">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-11-10T00:29:19 IST" name="Suite" finished-at="2026-11-10T00:29:51 IST" duration-ms="32077">
+  <suite started-at="2026-11-12T15:44:01 IST" name="Default suite" finished-at="2026-11-12T15:44:02 IST" duration-ms="327">
     <groups>
     </groups>
-    <test started-at="2026-11-10T00:29:19 IST" name="RahulshettyPage" finished-at="2026-11-10T00:29:51 IST" duration-ms="32077">
+    <test started-at="2026-11-12T15:44:01 IST" name="Default test" finished-at="2026-11-12T15:44:02 IST" duration-ms="327">
       <class name="testCases.TC_04_AddingProductToCart">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_04_AddingProductToCart@24aed80c]" started-at="2026-11-10T00:29:20 IST" name="setup" finished-at="2026-11-10T00:29:28 IST" duration-ms="8183" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[window]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_04_AddingProductToCart@1ff4931d]" started-at="2026-11-12T15:44:02 IST" name="setup" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1794478442030" status="FAIL">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'os' is required by BeforeClass on method setup but has not been marked @Optional or defined
+in C:\Users\user\AppData\Local\Temp\testng-eclipse-15846747\testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'os' is required by BeforeClass on method setup but has not been marked @Optional or defined
+in C:\Users\user\AppData\Local\Temp\testng-eclipse-15846747\testng-customsuite.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:264)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
+at org.testng.internal.Parameters.createParameters(Parameters.java:690)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:744)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="appLogin()[pri:0, instance:testCases.TC_04_AddingProductToCart@24aed80c]" started-at="2026-11-10T00:29:28 IST" name="appLogin" finished-at="2026-11-10T00:29:29 IST" duration-ms="542" status="PASS">
+        <test-method signature="appLogin()[pri:0, instance:testCases.TC_04_AddingProductToCart@1ff4931d]" started-at="2026-11-12T15:44:02 IST" name="appLogin" finished-at="2026-11-12T15:44:02 IST" duration-ms="1" status="SKIP">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'os' is required by BeforeClass on method setup but has not been marked @Optional or defined
+in C:\Users\user\AppData\Local\Temp\testng-eclipse-15846747\testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'os' is required by BeforeClass on method setup but has not been marked @Optional or defined
+in C:\Users\user\AppData\Local\Temp\testng-eclipse-15846747\testng-customsuite.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:264)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
+at org.testng.internal.Parameters.createParameters(Parameters.java:690)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:744)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- appLogin -->
-        <test-method signature="selectProductFromHomepage()[pri:0, instance:testCases.TC_04_AddingProductToCart@24aed80c]" started-at="2026-11-10T00:29:29 IST" name="selectProductFromHomepage" finished-at="2026-11-10T00:29:34 IST" depends-on-methods="testCases.TC_04_AddingProductToCart.appLogin" duration-ms="4046" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectProductFromHomepage -->
-        <test-method signature="cartPage()[pri:0, instance:testCases.TC_04_AddingProductToCart@24aed80c]" started-at="2026-11-10T00:29:36 IST" name="cartPage" finished-at="2026-11-10T00:29:49 IST" depends-on-methods="testCases.TC_04_AddingProductToCart.appLogin, testCases.TC_04_AddingProductToCart.selectProductFromHomepage" duration-ms="13364" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method signature="selectProductFromHomepage()[pri:0, instance:testCases.TC_04_AddingProductToCart@1ff4931d]" started-at="2026-11-12T15:44:02 IST" name="selectProductFromHomepage" finished-at="2026-11-12T15:44:02 IST" depends-on-methods="testCases.TC_04_AddingProductToCart.appLogin" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"div[class='cartSection'] h3"}
-  (Session info: chrome=156.0.8078.80)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
-Build info: version: '4.52.0', revision: '5b37fd4 5b37fd4d98c08d6a43a0790417f91b8f6f32fb5c'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.11'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8d97f9e88d4ead1ed28060cb1c832097, findElement {value=div[class='cartSection'] h3, using=css selector}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 156.0.8078.80, chrome: {chromedriverVersion: 156.0.8078.80 (fb096c0011f9..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58396}, goog:processID: 14748, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58396/devtoo..., se:cdpVersion: 156.0.8078.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 8d97f9e88d4ead1ed28060cb1c832097]]>
+              <![CDATA[Method testCases.TC_04_AddingProductToCart.selectProductFromHomepage() on instance testCases.TC_04_AddingProductToCart@1ff4931d depends on not successfully finished methods 
+[testCases.TC_04_AddingProductToCart.appLogin() on instance testCases.TC_04_AddingProductToCart@1ff4931d]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"div[class='cartSection'] h3"}
-  (Session info: chrome=156.0.8078.80)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
-Build info: version: '4.52.0', revision: '5b37fd4 5b37fd4d98c08d6a43a0790417f91b8f6f32fb5c'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.11'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8d97f9e88d4ead1ed28060cb1c832097, findElement {value=div[class='cartSection'] h3, using=css selector}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 156.0.8078.80, chrome: {chromedriverVersion: 156.0.8078.80 (fb096c0011f9..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58396}, goog:processID: 14748, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58396/devtoo..., se:cdpVersion: 156.0.8078.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 8d97f9e88d4ead1ed28060cb1c832097
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:253)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:705)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:173)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:457)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:451)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy15.getText(Unknown Source)
-at pageObjects.CartPage.pName(CartPage.java:49)
-at testCases.TC_04_AddingProductToCart.cartPage(TC_04_AddingProductToCart.java:56)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+              <![CDATA[java.lang.Throwable: Method testCases.TC_04_AddingProductToCart.selectProductFromHomepage() on instance testCases.TC_04_AddingProductToCart@1ff4931d depends on not successfully finished methods 
+[testCases.TC_04_AddingProductToCart.appLogin() on instance testCases.TC_04_AddingProductToCart@1ff4931d]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
 at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
 at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
@@ -98,15 +117,85 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectProductFromHomepage -->
+        <test-method signature="cartPage()[pri:0, instance:testCases.TC_04_AddingProductToCart@1ff4931d]" started-at="2026-11-12T15:44:02 IST" name="cartPage" finished-at="2026-11-12T15:44:02 IST" depends-on-methods="testCases.TC_04_AddingProductToCart.appLogin, testCases.TC_04_AddingProductToCart.selectProductFromHomepage" duration-ms="6" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method testCases.TC_04_AddingProductToCart.cartPage() on instance testCases.TC_04_AddingProductToCart@1ff4931d depends on not successfully finished methods 
+[testCases.TC_04_AddingProductToCart.appLogin() on instance testCases.TC_04_AddingProductToCart@1ff4931d
+testCases.TC_04_AddingProductToCart.selectProductFromHomepage() on instance testCases.TC_04_AddingProductToCart@1ff4931d]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method testCases.TC_04_AddingProductToCart.cartPage() on instance testCases.TC_04_AddingProductToCart@1ff4931d depends on not successfully finished methods 
+[testCases.TC_04_AddingProductToCart.appLogin() on instance testCases.TC_04_AddingProductToCart@1ff4931d
+testCases.TC_04_AddingProductToCart.selectProductFromHomepage() on instance testCases.TC_04_AddingProductToCart@1ff4931d]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:744)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cartPage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_04_AddingProductToCart@24aed80c]" started-at="2026-11-10T00:29:49 IST" name="tearDown" finished-at="2026-11-10T00:29:51 IST" duration-ms="2309" status="PASS">
+        <test-method signature="paymentForTheProduct()[pri:0, instance:testCases.TC_04_AddingProductToCart@1ff4931d]" started-at="2026-11-12T15:44:02 IST" name="paymentForTheProduct" finished-at="2026-11-12T15:44:02 IST" depends-on-methods="testCases.TC_04_AddingProductToCart.cartPage" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method testCases.TC_04_AddingProductToCart.paymentForTheProduct() on instance testCases.TC_04_AddingProductToCart@1ff4931d depends on not successfully finished methods 
+[testCases.TC_04_AddingProductToCart.cartPage() on instance testCases.TC_04_AddingProductToCart@1ff4931d]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method testCases.TC_04_AddingProductToCart.paymentForTheProduct() on instance testCases.TC_04_AddingProductToCart@1ff4931d depends on not successfully finished methods 
+[testCases.TC_04_AddingProductToCart.cartPage() on instance testCases.TC_04_AddingProductToCart@1ff4931d]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:744)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- paymentForTheProduct -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_04_AddingProductToCart@1ff4931d]" started-at="2026-11-12T15:44:02 IST" name="tearDown" finished-at="2026-11-12T15:44:02 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testCases.TC_04_AddingProductToCart -->
-    </test> <!-- RahulshettyPage -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

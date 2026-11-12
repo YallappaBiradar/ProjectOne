@@ -12,6 +12,7 @@ public class TC_04_AddingProductToCart extends BaseClass {
 
 	String id;
 	String prodName = "ZARA COAT 3";
+	String SelectSountry = " India";
 
 	@Test
 	public void appLogin() {
@@ -54,8 +55,7 @@ public class TC_04_AddingProductToCart extends BaseClass {
 //		cpage.clickCheckoutBtn();
 		Thread.sleep(3000);
 		String productName = cpage.pName();
-		System.out.println("Product Name  is :"+productName);
-		
+		System.out.println("Product Name  is :" + productName);
 
 		if (productName.equalsIgnoreCase(prodName)) {
 
@@ -64,10 +64,26 @@ public class TC_04_AddingProductToCart extends BaseClass {
 
 			Assert.assertTrue(false);
 		}
-		
+
 		cpage.clickCheckoutBtn();
 //		cpage.clickCheckoutBtn();
-		cpage.logout();
+//		cpage.logout();
+	}
+	
+	@Test(dependsOnMethods= "cartPage")
+	public void paymentForTheProduct() throws InterruptedException {
+		
+		CartPage cpage2 = new CartPage(driver);
+		
+		String cartEmail = cpage2.placeingSelectedOrder("ind", SelectSountry);
+		
+		if(cartEmail.equals(p.getProperty("uName"))) {
+			
+			Assert.assertTrue(true);
+		}
+		else {
+			Assert.fail();
+		}
 	}
 
 }
